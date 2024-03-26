@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+:root{
+--clr-White: hsl(0, 0%, 100%);
+--clr-Grey: hsl(0, 0%, 20%);
+--clr-Dark-Grey: hsl(0, 0%, 12%);
+--clr-Off-Black: hsl(0, 0%, 8%);
+--Green: hsl(75, 94%, 57%);
+--font-weight-normal:400;
+--font-weight-semi-bold:600;
+--font-weight-bold:700;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Inter",sans-serif;
+    font-weight: var(--font-weight-normal);
+    background-image: url(./assets/images/STADE.jpg);
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    padding-top: 10rem;
+   background-size: cover;
+   background-repeat: no-repeat;
+
+
+}
+ul{
+    list-style: none;
+
+}
+a{
+    display: block;
+    text-decoration: none;
+
+}
+.container{
+    padding-inline: 15rem;
+    margin: 9rem auto 0;
+}
+.profile{
+    background-color: rgba(24, 143, 212, 0.391);
+    width: 32rem;
+    border-radius: 1rem;
+    text-align: center;  
+    
+   
+    
+    
+}
+
+.profile-img >img{
+    border-radius: 50%;
+    height: 12rem;
+    box-shadow: 0 0 29px 15px rgb(217, 255, 0);
+    
+    transition: all 0.3s ease-in-out;
+    
+  
+    
+
+}
+.profile-img >img:hover{
+    box-shadow: 0 0 39px 25px rgb(0, 36, 215);
+
+}
+.title >h1{
+    
+ padding-top: 2rem;
+   
+    color: var(--clr-White);
+    font-size: 2.3rem;
+    font-weight: var(--font-weight-bold);
+
+
+}
+.title >h2{
+  
+    color: rgb(229, 255, 0);
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+
+    
+}
+p {
+    color: var(--clr-White);
+    font-weight: 700;
+    font-size: 22px;
+}
+.social-media{
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column ;
+    margin-top: 3rem;
+}
+.profile .social-media li{
+    
+    width: 100%;
+    
+}
+.profile .social-media li a{
+    background-color: var(--clr-Dark-Grey);
+    color: var(--clr-White);
+    padding: 1.6rem 0;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    font-weight: var(--font-weight-semi-bold);
+    transition: all 0.6s ease-in-out;
+}
+.profile .social-media li.git:hover a{
+    font-size: 2rem;
+    background-color: var(--Green);
+    color: var(--clr-Off-Black);
+
+
+}
+.profile .social-media li.fro:hover a{
+    background-color: rgb(55, 55, 223);
+    font-size: 2rem;
+
+}
+
+.profile .social-media li.yout:hover a{
+    background-color: rgb(205, 32, 31);
+    font-size: 2rem;
+    
+}
+.profile .social-media li.insta:hover a{
+    font-size: 2rem;
+    
+    background: radial-gradient(circle at 30% 107%, #ffea00 0%, #ffea00 5%, #ff1500 45%,#df0098 60%,#285AEB 90%);
+  box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+    
+}
+@media (min-width: 1200px) {
+    .container{
+        margin-top: 0;
+
+    }
+    .profile{
+        width: 38rem;
+        padding: 3rem 4rem;
+
+    }
+    
+}
